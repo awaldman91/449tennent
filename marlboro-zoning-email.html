@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Marlboro Zoning Board – 449 Tennent Road</title>
+  <meta name="description" content="Send a public comment to the Marlboro NJ Zoning Board regarding the proposed development at 449 Tennent Road." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #185FA5;
+      --blue-dark: #0C447C;
+      --blue-light: #E6F1FB;
+      --red-badge-bg: #FCEBEB;
+      --red-badge-text: #A32D2D;
+      --green-bg: #EAF3DE;
+      --green-text: #3B6D11;
+      --bg: #F5F4F0;
+      --surface: #FFFFFF;
+      --border: rgba(0,0,0,0.12);
+      --border-strong: rgba(0,0,0,0.22);
+      --text: #1A1A18;
+      --text-muted: #5F5E5A;
+      --text-hint: #888780;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .page-wrap {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .alert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--red-badge-bg);
+      color: var(--red-badge-text);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .page-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 420px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 9px 12px;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      border: 0.5px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: #FAFAF8;
+      color: var(--text);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(24,95,165,0.12);
+      background: #fff;
+    }
+
+    .form-group input::placeholder { color: var(--text-hint); }
+
+    .preview-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .preview-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .edit-toggle {
+      font-size: 13px;
+      color: var(--blue);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      padding: 0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .preview-box {
+      background: #FAFAF8;
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.1rem;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text);
+      white-space: pre-wrap;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .highlight {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .edit-textarea {
+      display: none;
+      width: 100%;
+      min-height: 280px;
+      padding: 1rem 1.1rem;
+      font-size: 14px;
+      line-height: 1.8;
+      font-family: 'DM Sans', sans-serif;
+      border: 0.5px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: #FAFAF8;
+      color: var(--text);
+      resize: vertical;
+    }
+
+    .edit-textarea:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(24,95,165,0.12);
+    }
+
+    .divider {
+      border: none;
+      border-top: 0.5px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      flex: 1;
+      min-width: 140px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 11px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover { background: var(--blue-dark); }
+    .btn-primary:active { transform: scale(0.98); }
+
+    .btn-secondary {
+      flex: 1;
+      min-width: 140px;
+      background: #fff;
+      color: var(--text);
+      border: 0.5px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 11px 18px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-secondary:hover { background: var(--bg); }
+    .btn-secondary:active { transform: scale(0.98); }
+
+    .success-note {
+      display: none;
+      background: var(--green-bg);
+      color: var(--green-text);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .notice {
+      font-size: 12.5px;
+      color: var(--text-hint);
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .notice strong { color: var(--text-muted); }
+
+    .footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 12px;
+      color: var(--text-hint);
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <header class="page-header">
+    <div class="alert-badge">⚠ Community Action</div>
+    <h1>Contact the Marlboro<br>Zoning Board</h1>
+    <p>Regarding the proposed development at <strong>449 Tennent Road</strong>. Enter your name and address below, then send your email in one click.</p>
+  </header>
+
+  <div class="card">
+    <div class="card-title">Your information</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" placeholder="Jane" oninput="updatePreview()" autocomplete="given-name" />
+      </div>
+      <div class="form-group">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" placeholder="Smith" oninput="updatePreview()" autocomplete="family-name" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="address">Your address</label>
+      <input type="text" id="address" placeholder="123 Main Street, Marlboro, NJ 07746" oninput="updatePreview()" autocomplete="street-address" />
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="preview-label-row">
+      <span class="preview-label">Email preview</span>
+      <button class="edit-toggle" onclick="toggleEdit()" id="edit-btn">Edit email text</button>
+    </div>
+
+    <div id="email-preview" class="preview-box"></div>
+    <textarea class="edit-textarea" id="custom-body" oninput="updatePreview()"></textarea>
+
+    <hr class="divider" />
+
+    <div class="btn-group">
+      <button class="btn-primary" onclick="sendEmail()">
+        ✉ Send email
+      </button>
+      <button class="btn-secondary" onclick="copyEmail()">
+        ⧉ Copy email
+      </button>
+    </div>
+
+    <div class="success-note" id="copy-success">✓ Copied! Paste it into your email app.</div>
+
+    <p class="notice">
+      "Send email" opens your email app with everything pre-filled.<br>
+      Sending to <strong>zoning@marlboro-nj.gov</strong>
+    </p>
+  </div>
+
+  <footer class="footer">
+    Marlboro, NJ Community Tool &mdash; No data is collected or stored.
+  </footer>
+
+</div>
+
+<script>
+  const SUBJECT = "Public Comment: 449 Tennent Road Development Proposal";
+  const BASE_BODY = `Dear Members of the Zoning Board,
+
+I am writing to express concerns regarding the proposed development at 449 Tennent Road.
+
+My concerns include traffic impacts, compatibility with surrounding residential properties, stormwater runoff, parking, and overall intensity of use for the area.
+
+I respectfully ask the Board to carefully review whether the requested variances meet the legal standards required under New Jersey land use law and whether this proposal is appropriate for the neighborhood.
+
+Thank you for your consideration.
+
+Sincerely,
+[NAME]
+[ADDRESS]`;
+
+  let editMode = false;
+
+  function getName() {
+    const f = document.getElementById('fname').value.trim();
+    const l = document.getElementById('lname').value.trim();
+    if (!f && !l) return '[Your Name]';
+    return [f, l].filter(Boolean).join(' ');
+  }
+
+  function getAddress() {
+    return document.getElementById('address').value.trim() || '[Your Address]';
+  }
+
+  function getTemplate() {
+    return editMode ? document.getElementById('custom-body').value : BASE_BODY;
+  }
+
+  function buildEmail() {
+    return getTemplate()
+      .replace('[NAME]', getName())
+      .replace('[ADDRESS]', getAddress());
+  }
+
+  function updatePreview() {
+    if (!editMode) {
+      const rendered = BASE_BODY
+        .replace('[NAME]', `<span class="highlight">${getName()}</span>`)
+        .replace('[ADDRESS]', `<span class="highlight">${getAddress()}</span>`);
+      document.getElementById('email-preview').innerHTML = rendered;
+    }
+  }
+
+  function toggleEdit() {
+    editMode = !editMode;
+    const preview = document.getElementById('email-preview');
+    const textarea = document.getElementById('custom-body');
+    const btn = document.getElementById('edit-btn');
+    if (editMode) {
+      textarea.value = BASE_BODY
+        .replace('[NAME]', getName())
+        .replace('[ADDRESS]', getAddress());
+      preview.style.display = 'none';
+      textarea.style.display = 'block';
+      btn.textContent = 'Show preview';
+    } else {
+      preview.style.display = 'block';
+      textarea.style.display = 'none';
+      btn.textContent = 'Edit email text';
+      updatePreview();
+    }
+  }
+
+  function sendEmail() {
+    const body = buildEmail();
+    window.location.href = 'mailto:zoning@marlboro-nj.gov?subject=' + encodeURIComponent(SUBJECT) + '&body=' + encodeURIComponent(body);
+  }
+
+  function copyEmail() {
+    const body = buildEmail();
+    const full = 'To: zoning@marlboro-nj.gov\nSubject: ' + SUBJECT + '\n\n' + body;
+    navigator.clipboard.writeText(full).then(function() {
+      var note = document.getElementById('copy-success');
+      note.style.display = 'block';
+      setTimeout(function() { note.style.display = 'none'; }, 3500);
+    }).catch(function() {
+      alert('Please copy this email manually:\n\nTo: zoning@marlboro-nj.gov\nSubject: ' + SUBJECT + '\n\n' + body);
+    });
+  }
+
+  updatePreview();
+</script>
+
+</body>
+</html>
